@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "name": "Win64-DEBUG",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "browse": {
+                "path": [
+                    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/include/**",
+                    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/atlmfc/include/*",
+                    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Auxiliary/VS/include/*",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17763.0/ucrt/*",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17763.0/um/*",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17763.0/shared/*",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17763.0/winrt/*",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17763.0/cppwinrt/*"
+                ],
+                "databaseFilename": ""
+            },
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.17763.0",
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,48 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "msvc build-debug",
+            "type": "process",
+            "windows": {
+                "command": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/Hostx64/x64/cl.exe",
+                "args": [
+                    "/JMC", "/permissive-","/Zc:wchar_t", "/Zi", "/Gm-", "/sdl", "/Zc:inline", "/fp:precise", "/errorReport:prompt", "/WX-", "/Zc:forScope", "/Gd", "/MDd", "/FC",
+                    "/Od", "/W3",
+                    "/EHsc",
+                    "helloworld.cpp",
+                    "/D \"WIN64\"",
+                    "/D \"_DEBUG\"",
+                    "/D \"_CONSOLE\"",
+                    "/D \"_UNICODE\"",
+                    "/D \"UNICODE\"",
+                    "/Fd:build/",
+                    "/Fe:build/",
+                    "/Fo:build/",
+                    "/I", "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/include",
+                    "/I", "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/atlmfc/include",
+                    "/I", "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Auxiliary/VS/include",
+                    "/I", "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17763.0/ucrt",
+                    "/I", "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17763.0/um",
+                    "/I", "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17763.0/shared",
+                    "/I", "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17763.0/winrt",
+                    "/I", "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17763.0/cppwinrt",
+                    "/link", "/DEBUG",
+                    "/LIBPATH:C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/lib/x64",
+                    "/LIBPATH:C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/atlmfc/lib/x64",
+                    "/LIBPATH:C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Auxiliary/VS/lib/x64",
+                    "/LIBPATH:C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/ucrt/x64",
+                    "/LIBPATH:C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x64",
+                    "/LIBPATH:C:/Program Files (x86)/Windows Kits/NETFXSDK/4.7.2/Lib/um/x64"
+                ]
+            },
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+    ]
+}
